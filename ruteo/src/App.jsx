@@ -1,6 +1,5 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import { store } from "./store/store";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import DashboardPage from "./pages/DashboardPage";
@@ -17,11 +16,10 @@ import DecantPage from "./pages/DecantsPage";
 import DecantDetailPage from "./pages/DecantDetailPage";
 import ProfilePage from "./pages/PerfilPage";
 import OrdenDetailPage from "./pages/OrdenDetailPage"
-import { Provider } from "react-redux";
 
 const App = () => {
   return (
-    <Provider store={store}>
+
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<ContainerPage />}>
@@ -53,7 +51,7 @@ const App = () => {
           </Route>
         </Routes>
       </BrowserRouter>
-    </Provider>
+    
   );
 };
 

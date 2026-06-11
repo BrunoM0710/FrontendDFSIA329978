@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import { useParams } from "react-router";
+import { useParams } from "react-router-dom";
 import { crearOrden } from "../../ordenes/ordenService";
 import { getPerfumeById } from "../../../Api/perfumeApi";
 import { crearDecant } from "../../decants/decantService";
